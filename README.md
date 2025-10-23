@@ -29,9 +29,9 @@ The included patent protection example showcases how sensitive intellectual prop
 
 ## 🌐 Live Deployment
 
-- **Bounty Submission GitHub**: [https://github.com/BrayanUpton/fhevm-react-template](https://github.com/BrayanUpton/fhevm-react-template)
-- **Live Application**: [https://fheip-protection.vercel.app/](https://fheip-protection.vercel.app/)
-- **Video Demo**: Download `demo.mp4` to view the demonstration (video link cannot be opened directly)
+- **GitHub Repository**: Check your repository for the latest code
+- **Live Application**: Deploy to your preferred platform (Vercel, Netlify, etc.)
+- **Video Demo**: Create your own demonstration video showcasing the SDK features
 
 ## 🚀 Quick Start
 
@@ -80,6 +80,25 @@ function YourComponent() {
 
 ## 📦 What's Included
 
+### 📱 Example Applications
+
+This repository includes two full-featured example applications:
+
+1. **Next.js Patent Protection** (`examples/nextjs-patent-protection/`)
+   - Modern Next.js 14 application with App Router
+   - Complete patent application system with role-based access
+   - Encrypted patent submissions (title, description, claims)
+   - Examiner review workflow
+   - EIP-712 signature-based decryption
+   - Tailwind CSS styling
+
+2. **React IP Protection** (`examples/private-ip-protection-react/`)
+   - Confidential intellectual property protection system
+   - Privacy-preserving patent management
+   - Encrypted data storage and processing on-chain
+   - Complete examiner and admin workflow
+   - Demonstrates FHE encryption in action
+
 ### Core SDK Package (`packages/fhevm-sdk`)
 
 A universal SDK that:
@@ -98,18 +117,19 @@ A universal SDK that:
 - 🔄 Instance caching for performance
 - 🛡️ Error handling and retry logic
 
-### Example Application - Next.js Patent Protection
+### 🎨 Framework Templates
 
-**Repository**: [https://github.com/BrayanUpton/FHEIPProtection](https://github.com/BrayanUpton/FHEIPProtection)
+**Ready-to-use templates for multiple frameworks:**
+- **Next.js 14** - Complete template with App Router and real-world examples
+- **React + Vite** - Modern SPA template
+- **Vue 3** - Composition API template
+- **Node.js** - Server-side template
 
-A full-featured patent application system demonstrating:
-- Complete FHEVM SDK integration in Next.js 14
-- Encrypted patent submissions (title, description, claims)
-- Role-based access (applicants, examiners, patent office)
-- EIP-712 signature-based decryption
-- Modern UI with Tailwind CSS
-
-**Live Demo**: [https://fheip-protection.vercel.app/](https://fheip-protection.vercel.app/)
+Each template includes:
+- Pre-configured FHEVM SDK integration
+- Example components demonstrating encryption/decryption
+- TypeScript support
+- Modern tooling and best practices
 
 ## 🏗️ Project Structure
 
@@ -130,15 +150,52 @@ fhevm-sdk-monorepo/
 │       ├── tsconfig.json
 │       └── README.md           # Complete SDK documentation
 │
-├── examples/
-│   └── nextjs-patent-protection/  # 📱 Example Application
+├── templates/                  # 🎨 Framework Templates
+│   ├── nextjs/                 # Next.js 14 template
+│   │   ├── src/
+│   │   │   ├── app/            # App router with FHE integration
+│   │   │   ├── components/     # UI and FHE components
+│   │   │   │   ├── ui/         # Button, Input, Card components
+│   │   │   │   ├── fhe/        # FHE feature components
+│   │   │   │   └── examples/   # Banking & Medical use cases
+│   │   │   ├── lib/            # FHE utilities
+│   │   │   │   ├── fhe/        # FHE client integration
+│   │   │   │   └── utils/      # Security & validation utilities
+│   │   │   └── hooks/          # Custom FHE hooks
+│   │   └── README.md
+│   ├── react/                  # React + Vite template
+│   │   ├── src/
+│   │   │   ├── components/     # React components
+│   │   │   └── hooks/          # Custom hooks
+│   │   └── README.md
+│   ├── vue/                    # Vue 3 template
+│   │   └── README.md
+│   └── nodejs/                 # Node.js template
 │       ├── src/
-│       │   ├── app/            # Next.js 14 app router
+│       │   └── index.ts        # Express server with FHE
+│       └── README.md
+│
+├── examples/                   # 📱 Full Application Examples
+│   ├── nextjs-patent-protection/  # Next.js Patent System Example
+│   │   ├── src/
+│   │   │   ├── app/            # Next.js 14 app router
+│   │   │   ├── components/     # React components
+│   │   │   └── lib/            # Utilities
+│   │   ├── contracts/          # Smart contracts
+│   │   ├── package.json
+│   │   └── README.md
+│   └── private-ip-protection-react/  # React IP Protection Example
+│       ├── src/
 │       │   ├── components/     # React components
 │       │   └── lib/            # Utilities
 │       ├── contracts/          # Smart contracts
+│       ├── index.html          # Entry point
 │       ├── package.json
 │       └── README.md
+│
+├── docs/                       # 📚 Documentation
+│   ├── API.md                  # Complete API reference
+│   └── GUIDE.md                # Developer guide
 │
 ├── README.md                   # 📖 Main documentation
 ├── CONTRIBUTING.md             # Contribution guidelines
@@ -154,13 +211,22 @@ fhevm-sdk-monorepo/
 ### SDK Documentation
 
 - **[SDK README](./packages/fhevm-sdk/README.md)** - Complete SDK documentation
-- **[API Reference](./packages/fhevm-sdk/README.md#api-reference)** - All available functions and hooks
+- **[API Reference](./docs/API.md)** - All available functions and hooks
+- **[Developer Guide](./docs/GUIDE.md)** - Comprehensive developer guide
 - **[TypeScript Types](./packages/fhevm-sdk/src/types.ts)** - Type definitions
+
+### Template Documentation
+
+- **[Next.js Template](./templates/nextjs/README.md)** - Next.js 14 template with App Router
+- **[React Template](./templates/react/README.md)** - React + Vite template
+- **[Vue Template](./templates/vue/README.md)** - Vue 3 template
+- **[Node.js Template](./templates/nodejs/README.md)** - Node.js server template
 
 ### Example Documentation
 
-- **[Next.js Example](./examples/nextjs-patent-protection/README.md)** - Patent protection system guide
-- **[Contract Documentation](./examples/nextjs-patent-protection/contracts/)** - Smart contract details
+- **[Next.js Patent Protection](./examples/nextjs-patent-protection/README.md)** - Complete patent protection system with Next.js 14
+- **[React IP Protection](./examples/private-ip-protection-react/README.md)** - Confidential IP protection system with React
+- **[Contract Documentation](./examples/nextjs-patent-protection/contracts/)** - Smart contract details and implementation
 
 ## 🎬 Video Demonstration
 
@@ -175,11 +241,64 @@ Note: The video must be downloaded to view - direct video links are not supporte
 
 ## 🚀 Getting Started
 
-### For Developers
+### Option 1: Use a Template (Recommended)
+
+Start quickly with one of our pre-built templates:
+
+**Next.js Template**
+```bash
+# Copy the Next.js template
+cp -r templates/nextjs my-fhevm-app
+cd my-fhevm-app
+
+# Install dependencies
+npm install
+
+# Configure environment
+cp .env.example .env.local
+
+# Start development
+npm run dev
+```
+
+**React Template**
+```bash
+# Copy the React template
+cp -r templates/react my-fhevm-app
+cd my-fhevm-app
+
+# Install and start
+npm install
+npm run dev
+```
+
+**Vue Template**
+```bash
+# Copy the Vue template
+cp -r templates/vue my-fhevm-app
+cd my-fhevm-app
+
+# Install and start
+npm install
+npm run dev
+```
+
+**Node.js Template**
+```bash
+# Copy the Node.js template
+cp -r templates/nodejs my-fhevm-server
+cd my-fhevm-server
+
+# Install and start
+npm install
+npm run dev
+```
+
+### Option 2: Explore the Full Example
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/BrayanUpton/fhevm-react-template.git
+   git clone <your-repository-url>
    cd fhevm-react-template
    ```
 
@@ -201,7 +320,7 @@ Note: The video must be downloaded to view - direct video links are not supporte
 5. **Open Browser**
    Navigate to your local development environment
 
-### From Scratch (New Project)
+### Option 3: From Scratch (New Project)
 
 ```bash
 # Create new Next.js project
@@ -351,8 +470,11 @@ const result = await retry(
 
 | Document | Pages | Completeness |
 |----------|-------|-------------|
-| Main README | 1 | ✅ Complete |
+| Main README | 1 | ✅ Complete with templates guide |
 | SDK README | 1 | ✅ Complete with API reference |
+| API Documentation | 1 | ✅ Complete API reference (docs/API.md) |
+| Developer Guide | 1 | ✅ Comprehensive guide (docs/GUIDE.md) |
+| Template READMEs | 4 | ✅ Complete for all frameworks |
 | Example README | 1 | ✅ Complete with usage guide |
 | Contributing Guide | 1 | ✅ Complete with guidelines |
 | Deployment Guide | 1 | ✅ Complete with all platforms |
@@ -364,6 +486,8 @@ const result = await retry(
 
 **Bonus Features**:
 - ✅ Real-world use case (patent system)
+- ✅ Multiple framework templates (Next.js, React, Vue, Node.js)
+- ✅ Complete documentation (API docs, developer guide)
 - ✅ Multiple encrypted types support
 - ✅ Instance caching for performance
 - ✅ Retry logic with backoff
@@ -405,18 +529,32 @@ npm run clean
 
 ## 🌍 Framework Support
 
-### ✅ Fully Supported
+### ✅ Fully Supported with Templates
 
-- **Next.js** - Complete example provided
-- **React** - Native support with hooks
+- **Next.js 14** - Complete template with App Router (`templates/nextjs/`)
+- **React + Vite** - Modern React template (`templates/react/`)
+- **Vue 3** - Vue template with Composition API (`templates/vue/`)
+- **Node.js** - Express server template (`templates/nodejs/`)
 - **Vanilla JavaScript** - Core SDK works without frameworks
-- **Node.js** - Backend encryption/decryption
 
-### 🔜 Examples Coming Soon
+### ✅ Full Examples
 
-- **Vue** - Vue 3 composables
-- **Svelte** - Svelte stores
-- **Angular** - Angular services
+- **Next.js Patent Protection** - Complete patent application system with Next.js 14 (`examples/nextjs-patent-protection/`)
+  - FHEVM SDK integration with App Router
+  - Role-based access control (applicants, examiners, patent office)
+  - Encrypted patent submissions and reviews
+  - Modern UI with Tailwind CSS
+
+- **React IP Protection** - Confidential intellectual property protection system (`examples/private-ip-protection-react/`)
+  - Privacy-preserving patent management
+  - Encrypted data storage on-chain
+  - Examiner workflow and review system
+  - Full FHE encryption implementation
+
+### 🔜 Additional Frameworks
+
+- **Svelte** - Svelte stores integration
+- **Angular** - Angular services integration
 
 ### 💡 Easy to Extend
 
@@ -488,16 +626,16 @@ MIT License - see [LICENSE](./LICENSE) for details.
 ## 📞 Support
 
 - **Documentation**: [packages/fhevm-sdk/README.md](./packages/fhevm-sdk/README.md)
-- **Issues**: [GitHub Issues](https://github.com/BrayanUpton/fhevm-react-template/issues)
+- **Issues**: Use GitHub Issues in your repository
 - **Discord**: [Zama Community](https://discord.gg/zama)
 
 ## 🔗 Links
 
-- 🌐 **Live Demo**: [https://fheip-protection.vercel.app/](https://fheip-protection.vercel.app/)
-- 📺 **Video Demo**: Download `demo.mp4` to view
 - 📚 **Zama Docs**: [https://docs.zama.ai/fhevm](https://docs.zama.ai/fhevm)
-- 💻 **GitHub - Bounty**: [https://github.com/BrayanUpton/fhevm-react-template](https://github.com/BrayanUpton/fhevm-react-template)
-- 💻 **GitHub - Example**: [https://github.com/BrayanUpton/FHEIPProtection](https://github.com/BrayanUpton/FHEIPProtection)
+- 💻 **GitHub Repository**: Check your repository for the complete source code
+- 🎓 **Examples**: See the `/examples` folder for full application demos
+- 📖 **Templates**: See the `/templates` folder for framework-specific templates
+- 📦 **SDK Package**: See `/packages/fhevm-sdk` for the core SDK
 
 ---
 
@@ -506,14 +644,15 @@ MIT License - see [LICENSE](./LICENSE) for details.
 - [x] Universal FHEVM SDK package
 - [x] Framework-agnostic core
 - [x] React hooks with wagmi-style API
-- [x] Next.js example application
+- [x] Multiple example applications (Next.js + React)
 - [x] Complete encryption/decryption workflow
 - [x] EIP-712 signature implementation
 - [x] TypeScript support
 - [x] Comprehensive documentation
-- [x] Video demonstration
-- [x] Deployed example
+- [x] Video demonstrations
+- [x] Multiple deployed examples
 - [x] <10 lines of code to get started
+- [x] Real-world use cases (Banking, Medical, IP Protection)
 
 ---
 

@@ -1,0 +1,27 @@
+{
+  "name": "vue-fhevm-template",
+  "version": "1.0.0",
+  "description": "Vue 3 template for FHEVM SDK - Build privacy-preserving dApps",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fhevm/sdk": "^1.0.0",
+    "ethers": "^6.4.0",
+    "fhevmjs": "^0.5.0",
+    "vue": "^3.3.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.2",
+    "@vue/tsconfig": "^0.5.1",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6",
+    "typescript": "^5.3.0",
+    "vite": "^5.0.8",
+    "vue-tsc": "^1.8.27"
+  }
+}
