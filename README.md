@@ -27,11 +27,7 @@ This SDK demonstrates **Confidential Data Analysis** using FHE smart contracts t
 
 The included patent protection example showcases how sensitive intellectual property can be managed on-chain with the same privacy guarantees needed for public transport data, medical records, or any confidential information.
 
-## 🌐 Live Deployment
-
-- **GitHub Repository**: Check your repository for the latest code
-- **Live Application**: Deploy to your preferred platform (Vercel, Netlify, etc.)
-- **Video Demo**: Create your own demonstration video showcasing the SDK features
+🌐 **[Live Demo](https://fheip-protection.vercel.app/)** | 📺 **Video Demo: Download demo.mp4** | 📄 **[GitHub Repository](https://github.com/BrayanUpton/FHEIPProtection)**
 
 ## 🚀 Quick Start
 
